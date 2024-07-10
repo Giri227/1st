@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#front-content {
+    position: absolute;
+    top: 0;
+    right: 0; 
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.present {
+    display: flex;
+    flex-direction: column;
+}
+
+.present p {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Snell Roundland, cursive;
+    animation: oppo .5s infinite;
+    color: #0004ff;
+    opacity: 0;
+    margin: 0;
+}
+
+.present-img {
+    width: 200px;
+    cursor: pointer;
+    animation: roti 1s infinite;
+    transition: ease .2s;
+}
+
+.full {
+    transform: scale(9, 9);
+}
+
+#after-cont {
+    position: absolute;
+    top: 0;
+    right: 0; 
+    bottom: 0;
+    left: 0;
+    display: none;
+    flex-flow: row wrap;
+}
+
+.front {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-evenly;
+    height: 40%;
+    width: 100%;
+}
+
+.present-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 8.5em;
+}
+
+.cong {
+    text-transform: uppercase;
+    font-size: 100px;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.cong p {
+    margin: 0;
+    animation: blick 1s infinite;
+}
+
+.name {
+    font-family: 'Pacifico', cursive;
+    font-size: 150px;
+    margin: 0;
+    animation: shake 1s infinite;
+}
+
+.after {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+.emoji {
+    font-size: 40px;
+    height: 100%;
+}
+
+.down {
+    display: flex;
+    align-items: flex-end;
+}
+
+.emoji p {
+    animation: rotate 2s infinite;
+    margin: 0;
+}
+
+.prup-smile-box {
+    display: flex;
+}
+
+.prup-smile-box div {
+    display: flex;
+    align-items: flex-end;
+    height: 155px;
+    width: 118px;
+}
+
+.prup-smile-box div img {
+    height: 43px;
+    animation: prup 1s infinite;
+}
+
+.verks-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+
+@keyframes roti {
+    from {
+        transform: rotateY(70deg);
+    }
+    to {
+        transform: rotateY(-70deg);
+    }
+}
+
+@keyframes oppo {
+    from {
+        color: #ff031c;
+    }
+    to {
+        color: #0004ff; 
+    }
+}
+
+@keyframes blick {
+    from {
+        color: #ff0077;
+    }
+    to {
+        color: #d1ff05;
+    }
+}
+
+@keyframes shake {
+    30% {
+        transform: translateX(-30px);
+    }
+    40% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(30px);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(720deg);
+    }
+    to {
+        transform: rotate(-720deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(720deg);
+    }
+    to {
+        transform: rotate(-720deg);
+    }
+}
+
+@keyframes vissi {
+    from {
+        opacity: 0;
+    }
+    to {
+        transform: 1;
+    }
+}
+
+@keyframes prup {
+    from {
+        width: 40px;
+    }
+    to {
+        width: 118px;
+    }
+}
